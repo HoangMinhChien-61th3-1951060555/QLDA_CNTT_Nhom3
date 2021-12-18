@@ -1,0 +1,32 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 64p;
+}
+
+.navbar-nav{
+    display: inline-flex;
+    font-size: 1rem;
+    padding-top: 10px;  
+}
+
+
+.material-icons-outlined{
+    color: black;
+}
+
+.a{
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
+}
+
+.a:hover{
+    color: skyblue;
+}
+
+
+
