@@ -5,7 +5,7 @@
     if(!isset($_SESSION['isLoginOK'])){
         header("location: loginadmin.php");
     }
-    include("template/header.php");
+    require("template/header.php");
 ?>
 
 <main>

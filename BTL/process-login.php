@@ -22,7 +22,7 @@
         if(mysqli_num_rows($result) > 0){
             // CẤP THẺ LÀM VIỆC
             $_SESSION['isLoginOK'] = $TenDangNhap;
-            header("location: admin/admin.php"); //Chuyển hướng về Trang quản trị
+            header("location: trangchu.php"); //Chuyển hướng về Trang chủ
         }else{
             $error = "Bạn nhập tên đăng nhập hoặc mật khẩu chưa chính xác";
             header("location: login.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi

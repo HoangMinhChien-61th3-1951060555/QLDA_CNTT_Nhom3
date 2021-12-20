@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 18, 2021 lúc 07:51 AM
+-- Thời gian đã tạo: Th12 20, 2021 lúc 02:53 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
 
@@ -108,7 +108,7 @@ CREATE TABLE `nguoidung` (
 --
 
 INSERT INTO `nguoidung` (`MaKH`, `TenKH`, `Diachi`, `Sdt`, `TenDangNhap`, `MatKhau`) VALUES
-(1, '', '', '', 'admin', 'admin');
+(1, '', '', '', 'Chien', '123');
 
 -- --------------------------------------------------------
 

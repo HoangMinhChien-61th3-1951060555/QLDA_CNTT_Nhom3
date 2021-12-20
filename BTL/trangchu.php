@@ -23,7 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -41,11 +42,11 @@
             <liv class="nav-item">
               <a class="a" href="#bangtin">
                 <span class="material-icons-outlined">article</span>
-                Bảng tin
+                Bảng tin 
               </a>
               <a class="a " href="#trainghiem">
                 <span class="material-icons-outlined">travel_explore</span>
-                Trải nghiệm
+                Trải nghiệm 
               </a>
               <a class="a" href="#tour">
                 <span class="material-icons-outlined">location_on</span>
@@ -97,23 +98,73 @@
         </div>
       </div>
     </section>
-    <div class="w-60 h-60 d-flex justify-content-end">
-      <img
-        src="Image/background.png"
-        
-        class="row img-fluid"
-      />
+
+<section class="home" id="home">
+
+  <div class="content">
+    <h1>Tìm nơi dừng chân hoàn hảo cùng Hahalolo !</h1>
+    <p>Từ những khu nghỉ dưỡng thanh bình đến những căn hộ sang trọng hiện đại</p>
+    <a href="detail.php" class="btn">Khám phá ngay</a>
+  </div>
+
+  <div class="controls">
+    <span class="vid-btn active" data-src="Image/vid-1.mp4"></span>
+    <span class="vid-btn" data-src="Image/vid-2.mp4"></span>
+    <span class="vid-btn" data-src="Image/vid-3.mp4"></span>
+    <span class="vid-btn" data-src="Image/vid-4.mp4"></span>
+    <span class="vid-btn" data-src="image/vid-5.mp4"></span>
+  </div>
+
+  <div class="video-container">
+    <video src="Image/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+  </div>
+
+</section>
+
+
+<section class="book" id="book">
+
+  <h1 class="heading">
+      <span>Đ</span>
+      <span>Ặ</span>
+      <span>T</span>
       
+      <span class="space"></span>
+      <span>N</span>
+      <span>G</span>
+      <span>A</span>
+      <span>Y</span>
+  </h1>
+
+  <div class="row">
+
+    <div class="image">
+        <img src="Image/pichotel.png" alt="">
     </div>
-    <main class="container main">
-      
-      <div class="container-fluid">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Nhập nơi bạn muốn đến " aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
-        </form>
-      </div>
-      </div>
+
+    <form action="">
+        <div class="inputBox">
+            <h3>Bạn muốn ở đâu ?</h3>
+            <input type="text" placeholder="Nhập nơi bạn muốn đến">
+        </div>
+        <div class="inputBox">
+            <h3>Số người</h3>
+            <input type="number" placeholder="Nhập số thành viên">
+        </div>
+        <div class="inputBox">
+            <h3>Ngày nhận phòng</h3>
+            <input type="date">
+        </div>
+        <div class="inputBox">
+            <h3>Ngày trả phòng</h3>
+            <input type="date">
+        </div>
+        <input type="submit" class="btn" value="Tìm kiếm">
+    </form>
+
+  </div>
+
+</section>
       
       <main class="container mt-5">
         <h6 class="display-6 mb-3">Chỗ nghỉ nổi bật</h6>

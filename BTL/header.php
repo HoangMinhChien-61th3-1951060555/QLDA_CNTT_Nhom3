@@ -23,7 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -41,11 +42,11 @@
             <liv class="nav-item">
               <a class="a" href="#bangtin">
                 <span class="material-icons-outlined">article</span>
-                Bảng tin
+                Bảng tin 
               </a>
               <a class="a " href="#trainghiem">
                 <span class="material-icons-outlined">travel_explore</span>
-                Trải nghiệm
+                Trải nghiệm 
               </a>
               <a class="a" href="#tour">
                 <span class="material-icons-outlined">location_on</span>
