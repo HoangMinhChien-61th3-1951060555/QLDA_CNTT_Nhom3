@@ -11,7 +11,7 @@
 <body>
     <div class="login-box">
     <h2>Login</h2>
-    <form>
+    <form action="process-loginadmin.php" method="POST">
         <div class="user-box">
         <input type="text" name="txtadmin" required="">
         <label>Tên đăng nhập</label>

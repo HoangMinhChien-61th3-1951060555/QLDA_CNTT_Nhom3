@@ -23,32 +23,36 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 <header>
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Admin</a>
+              <a class="navbar-brand" href="admin.php">Admin</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="../trangchu.php">Home</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="DSKS.php">Danh sách khách sạn</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="giaphong.php">Danh sách giá phòng</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="DSDP.php">Danh sách đặt phòng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nguoidung.php">Danh sách khách hàng</a>
                   </li>
                   <?php
                                   if(isset($_SESSION['isLoginOK']))
                                   {
                                       echo '<li class="nav-item">';
-                                      echo "<a class='nav-link'>Welcome: ".$_SESSION['isLoginOK']."</a>";
+                                      echo "<a class='nav-link'>Xin chào: ".$_SESSION['isLoginOK']."</a>";
                                       echo '</li>';
                                       echo '<li class="nav-item">';
                                       echo "<a class='nav-link text-danger' href='logout.php'>Logout</a>";

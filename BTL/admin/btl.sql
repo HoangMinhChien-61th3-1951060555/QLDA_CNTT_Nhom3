@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 20, 2021 lúc 02:53 AM
+-- Thời gian đã tạo: Th12 22, 2021 lúc 09:24 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
 
@@ -48,7 +48,7 @@ INSERT INTO `admin` (`tk`, `pass`) VALUES
 CREATE TABLE `datphong` (
   `MaDat` int(11) NOT NULL,
   `MaKH` int(11) NOT NULL,
-  `MaPhong` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `MaPhong` int(11) NOT NULL,
   `NgayDat` date NOT NULL,
   `NgayTra` date NOT NULL,
   `TrangThai` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -66,27 +66,24 @@ CREATE TABLE `khachsan` (
   `TenKS` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Diachi` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Khuvuc` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Mota` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `SLdat` int(11) NOT NULL,
-  `Gia` int(11) NOT NULL,
-  `Sdt` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Anh` binary(100) NOT NULL
+  `Anh` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `khachsan`
 --
 
-INSERT INTO `khachsan` (`MaKS`, `TenKS`, `Diachi`, `Khuvuc`, `Mota`, `SLdat`, `Gia`, `Sdt`, `Anh`) VALUES
-('DN01', 'Harmony Homestay', '152/21 Phan Thanh, Thạc Gián Quận Thanh Khê', 'Đà Nẵng', '', 0, 1300000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('DN02', 'Khách Sạn Maximilan Đà Nẵng', '222 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà', 'Đà Nẵng', '', 0, 1000000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('DN03', 'Roliva Hotel & Apartment Đà Nẵng', '13 Phạm Văn Đồng, An Hải Bắc, Sơn Trà', 'Đà Nẵng', '', 0, 110000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HCM01', 'Aladdin Hotel & Apartment', '397 Huynh Van Banh, Phuong 11 Quan Phu Nhuan, phường 13, Quận Phú Nhuận', 'Hồ Chí Minh', '', 0, 2000000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HCM02', 'Saigon Cactus Apartment', '251/8 Nguyễn Văn Trỗi, Phường 10, Phú Nhuận', 'Hồ Chí Minh', '', 0, 1500000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HCM03', 'Tâm Sen Hotel', '57A Lê Văn Thịnh', 'Hồ Chí Minh', '', 0, 1300000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HN01', 'Hana stay', 'Số 148 Phan Kế Bính, Cống Vị Quận Ba Đình', 'Hà Nội', '', 0, 1300000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HN02', 'HOMEY Hotel Apartment 2', '156A ngõ 154 Đình Thôn. Mỹ Đình 1, Nam Từ Liêm', 'Hà Nội', '', 0, 1000000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
-('HN03', 'Little Anh House', '6A Ngõ 67 Lý Thường Kiệt, Trần Hưng Đạo Quận Hoàn Kiếm', 'Hà Nội', '', 0, 110000, '', 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+INSERT INTO `khachsan` (`MaKS`, `TenKS`, `Diachi`, `Khuvuc`, `SLdat`, `Anh`) VALUES
+('DN01', 'Harmony Homestay', '152/21 Phan Thanh, Thạc Gián Quận Thanh Khê', 'Đà Nẵng', 0, 'Images/Hana.jpg'),
+('DN02', 'Khách Sạn Maximilan Đà Nẵng', '222 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà', 'Đà Nẵng', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('DN03', 'Roliva Hotel & Apartment Đà Nẵng', '13 Phạm Văn Đồng, An Hải Bắc, Sơn Trà', 'Đà Nẵng', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HCM01', 'Aladdin Hotel & Apartment', '397 Huỳnh Văn Bánh, Quận Phú Nhuận, Hồ Chí Minh', 'Hồ Chí Minh', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HCM02', 'Saigon Cactus Apartment', '251/8 Nguyễn Văn Trỗi, Phường 10, Phú Nhuận', 'Hồ Chí Minh', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HCM03', 'Tâm Sen Hotel', '57A Lê Văn Thịnh', 'Hồ Chí Minh', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HN01', 'Hana stay', 'Số 148 Phan Kế Bính, Cống Vị Quận Ba Đình', 'Hà Nội', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HN02', 'HOMEY Hotel Apartment 2', '156A ngõ 154 Đình Thôn. Mỹ Đình 1, Nam Từ Liêm', 'Hà Nội', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+('HN03', 'Little Anh House', '6A Ngõ 67 Lý Thường Kiệt, Trần Hưng Đạo Quận Hoàn Kiếm', 'Hà Nội', 0, '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0');
 
 -- --------------------------------------------------------
 
@@ -97,7 +94,6 @@ INSERT INTO `khachsan` (`MaKS`, `TenKS`, `Diachi`, `Khuvuc`, `Mota`, `SLdat`, `G
 CREATE TABLE `nguoidung` (
   `MaKH` int(11) NOT NULL,
   `TenKH` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Diachi` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Sdt` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
   `TenDangNhap` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `MatKhau` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL
@@ -107,8 +103,9 @@ CREATE TABLE `nguoidung` (
 -- Đang đổ dữ liệu cho bảng `nguoidung`
 --
 
-INSERT INTO `nguoidung` (`MaKH`, `TenKH`, `Diachi`, `Sdt`, `TenDangNhap`, `MatKhau`) VALUES
-(1, '', '', '', 'Chien', '123');
+INSERT INTO `nguoidung` (`MaKH`, `TenKH`, `Sdt`, `TenDangNhap`, `MatKhau`) VALUES
+(1, 'Chiến', '', 'Chien', '123'),
+(2, 'Ân', '', 'An', '123');
 
 -- --------------------------------------------------------
 
@@ -117,33 +114,45 @@ INSERT INTO `nguoidung` (`MaKH`, `TenKH`, `Diachi`, `Sdt`, `TenDangNhap`, `MatKh
 --
 
 CREATE TABLE `phong` (
-  `MaPhong` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `MaPhong` int(11) NOT NULL,
   `MaKS` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `TrangThai` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0'
+  `TrangThai` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `Gia` float NOT NULL,
+  `Loai` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `phong`
 --
 
-INSERT INTO `phong` (`MaPhong`, `MaKS`, `TrangThai`) VALUES
-('P101', 'HN01', '0'),
-('P102', 'HN01', '0'),
-('P103', 'HN01', '0'),
-('P201', 'HN02', '0'),
-('P202', 'HN02', '0'),
-('P203', 'HN02', '0'),
-('P301', 'HN03', '0'),
-('P302', 'HN03', '0'),
-('P401', 'DN01', '0'),
-('P501', 'DN02', '0'),
-('P502', 'DN02', '0'),
-('P601', 'DN03', '0'),
-('P602', 'DN03', '0'),
-('P701', 'HCM01', '0'),
-('P801', 'HCM02', '0'),
-('P802', 'HCM02', '0'),
-('P901', 'HCM03', '0');
+INSERT INTO `phong` (`MaPhong`, `MaKS`, `TrangThai`, `Gia`, `Loai`) VALUES
+(1, 'HN01', '0', 1300000, 'Don'),
+(2, 'HN01', '0', 1500000, 'Doi'),
+(3, 'HN01', '0', 1300000, 'Don'),
+(4, 'HN01', '0', 1500000, 'Doi'),
+(5, 'HN02', '0', 1000000, 'Don'),
+(6, 'HN02', '0', 1000000, 'Don'),
+(7, 'HN02', '0', 1400000, 'Doi'),
+(8, 'HN02', '0', 1400000, 'Doi'),
+(9, 'HN03', '0', 1100000, 'Don'),
+(10, 'HN03', '0', 1100000, 'Don'),
+(11, 'DN01', '0', 1300000, 'Don'),
+(12, 'DN01', '0', 1700000, 'Doi'),
+(13, 'DN01', '0', 1300000, 'Don'),
+(14, 'DN02', '0', 1000000, 'Don'),
+(15, 'DN02', '0', 1000000, 'Don'),
+(16, 'DN03', '0', 1100000, 'Don'),
+(17, 'DN03', '0', 1100000, 'Don'),
+(18, 'DN03', '0', 1400000, 'Doi'),
+(19, 'HCM01', '0', 2000000, 'Don'),
+(20, 'HCM01', '0', 2000000, 'Don'),
+(21, 'HCM01', '0', 2400000, 'Doi'),
+(22, 'HCM02', '0', 1500000, 'Don'),
+(23, 'HCM02', '0', 1500000, 'Don'),
+(24, 'HCM03', '0', 1300000, 'Don'),
+(25, 'HCM03', '0', 1300000, 'Don'),
+(26, 'HCM03', '0', 200000, 'Doi'),
+(27, 'HCM03', '0', 2000000, 'Doi');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -197,7 +206,13 @@ ALTER TABLE `datphong`
 -- AUTO_INCREMENT cho bảng `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `MaKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `MaKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT cho bảng `phong`
+--
+ALTER TABLE `phong`
+  MODIFY `MaPhong` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

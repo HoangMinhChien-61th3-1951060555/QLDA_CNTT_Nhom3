@@ -9,21 +9,14 @@
 ?>
 <main>
         <div class="container">
-            <h5 class="text-center text-primary mt-5">Danh sách Khách sạn</h5>
-            <div>
-                <a class="btn btn-primary" href="add-hotel.php">Thêm khách sạn</a>
-            </div>
-            <table class="table" >
+            <h5 class="text-center text-primary mt-5">Danh sách Người dùng</h5>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Mã khách sạn</th>
-                        <th scope="col">Tên khách sạn</th>
-                        <th scope="col">Địa chỉ</th>
-                        <th scope="col">Khu vực</th>
-                        <th scope="col">Mô tả</th>
-                        <th scope="col">Ảnh</th>
-                        <th scope="col">Sửa</th>
-                        <th scope="col">Xóa</th>
+                        <th scope="col">Mã khách hàng</th>
+                        <th scope="col">Tên khách hàng</th>
+                        <th scope="col">Tên đăng nhập</th>
+                        <th scope="col">Sdt</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +28,7 @@
                             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                         }
                         // Bước 02: Thực hiện truy vấn
-                        $sql = "SELECT * FROM khachsan";
+                        $sql = "SELECT * FROM nguoidung";
                         $result = mysqli_query($conn, $sql);
                         // Bước 03: Xử lý kết quả truy vấn 
                         
@@ -43,14 +36,10 @@
                             while($row = mysqli_fetch_assoc($result)){
                     ?>
                                 <tr>
-                                    <th scope="row"><?php echo $row['MaKS']; ?></th>
-                                    <td><?php echo $row['TenKS']; ?></td>
-                                    <td><?php echo $row['DiaChi']; ?></td>
-                                    <td><?php echo $row['KhuVuc']; ?></td>
-                                    <td><?php echo $row['MoTa']; ?></td>
-                                    <td><?php echo $row['Anh']; ?></td>
-                                    <td><a href="update-hotel.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="delete-hotel.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-trash"></i></a></td>
+                                    <th scope="row"><?php echo $row['MaKH']; ?></th>
+                                    <td><?php echo $row['TenKH']; ?></td>
+                                    <td><?php echo $row['TenDangNhap']; ?></td>
+                                    <td><?php echo $row['Sdt']; ?></td>
                                 </tr>
                     <?php
                             }

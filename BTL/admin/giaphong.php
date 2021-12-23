@@ -9,21 +9,14 @@
 ?>
 <main>
         <div class="container">
-            <h5 class="text-center text-primary mt-5">Danh sách Khách sạn</h5>
-            <div>
-                <a class="btn btn-primary" href="add-hotel.php">Thêm khách sạn</a>
-            </div>
-            <table class="table" >
+            <h5 class="text-center text-primary mt-5">Giá phòng</h5>
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Mã khách sạn</th>
                         <th scope="col">Tên khách sạn</th>
-                        <th scope="col">Địa chỉ</th>
-                        <th scope="col">Khu vực</th>
-                        <th scope="col">Mô tả</th>
-                        <th scope="col">Ảnh</th>
-                        <th scope="col">Sửa</th>
-                        <th scope="col">Xóa</th>
+                        <th scope="col">Loại</th>
+                        <th scope="col">Giá (đêm)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,26 +28,23 @@
                             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                         }
                         // Bước 02: Thực hiện truy vấn
-                        $sql = "SELECT * FROM khachsan";
-                        $result = mysqli_query($conn, $sql);
-                        // Bước 03: Xử lý kết quả truy vấn 
-                        
+                        $sql = "SELECT * FROM  khachsan_loaiphong, khachsan where khachsan.MaKS = khachsan_loaiphong.MaKS";
+                        $result = mysqli_query($conn,$sql);
+                        // Bước 03: Xử lý kết quả truy vấn
                         if(mysqli_num_rows($result) > 0){
                             while($row = mysqli_fetch_assoc($result)){
                     ?>
                                 <tr>
                                     <th scope="row"><?php echo $row['MaKS']; ?></th>
                                     <td><?php echo $row['TenKS']; ?></td>
-                                    <td><?php echo $row['DiaChi']; ?></td>
-                                    <td><?php echo $row['KhuVuc']; ?></td>
-                                    <td><?php echo $row['MoTa']; ?></td>
-                                    <td><?php echo $row['Anh']; ?></td>
-                                    <td><a href="update-hotel.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="delete-hotel.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-trash"></i></a></td>
+                                    <td><?php echo $row['Loai']; ?></td>
+                                    <td><?php echo $row['Gia']; ?></td>
+                                    <td><a href="update-gia.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="delete-gia.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-trash"></i></a></td>
                                 </tr>
                     <?php
                             }
-                        }   
+                        }
                         // Bước 04: Đóng kết nối Database Server
                         mysqli_close($conn);
                     ?>

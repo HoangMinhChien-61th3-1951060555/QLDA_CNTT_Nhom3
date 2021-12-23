@@ -5,7 +5,7 @@
     //login.php TRUYỀN DỮ LIỆU SANG: NHẬN DỮ LIỆU TỪ login.php gửi sang
     if(isset($_POST['btnSignIn'])){
         $TenDangNhap = $_POST['txtTenDangNhap'];
-        $pass  = $_POST['txtPass'];
+        $MatKhau  = $_POST['txtMatKhau'];
         //Ở đây còn phải kiểm tra người dùng đã nhập chưa
 
         // Bước 01: Kết nối Database Server
@@ -14,7 +14,7 @@
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }
         // Bước 02: Thực hiện truy vấn
-        $sql = "SELECT * FROM db_nguoidung WHERE TenDangNhap = '$TenDangNhap' AND MatKhau='$pass'";
+        $sql = "SELECT * FROM nguoidung WHERE TenDangNhap = '$TenDangNhap' AND MatKhau='$MatKhau'";
         // Ở đây còn có các vấn đề về tính hợp lệ dữ liệu nhập vào FORM
         // Nghiêm trọng: lỗi SQL Injection
 

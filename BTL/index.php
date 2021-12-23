@@ -6,6 +6,15 @@
     <title>Trang chủ | Tìm kiếm khách sạn | Hahalolo</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    
     <link rel="stylesheet" href="cssforindex.css"/>
 
 </head>
@@ -13,29 +22,35 @@
 
 <header>
     <div id="menu-bar" class="fas fa-bars"></div>
-
+    <img style = "width:3% "src="Image/Logo.jpg">
     <a href="#" class="logo"><span>H</span>ahalolo</a>
     <nav class="navbar">
-        <a href="#Bangtin">Bảng tin</a>
-        <a href="#Experience">Trải nghiệm</a>
-        <a href="#Tour">Tour</a>
-        <a href="index.php">Khách sạn</a>
-        <a href="#flight">Vé máy bay</a>
-        <a href="#car">Cho thuê xe</a>
-        <a href="#shopping">Mua sắm</a>
+        
+        <a class="a" href="#Bangtin"><span class="material-icons-outlined">article</span>
+            Bảng tin</a>
+        <a class="a" href="#Experience"><span class="material-icons-outlined">travel_explore</span>
+            Trải nghiệm</a>
+        <a class="a" href="#Tour"><span class="material-icons-outlined">location_on</span>
+            Tour</a>
+        <a class="a" href="index.php"><span class="material-icons-outlined">business</span>
+            Khách sạn</a>
+        <a class="a" href="#flight"><span class="material-icons-outlined">flight_takeoff</span>
+            Vé máy bay</a>
+        <a class="a" href="#car"><span class="material-icons-outlined">directions_car</span>
+            Cho thuê xe</a>
+        <a class="a" href="#shopping"><span class="material-icons-outlined">shopping_bag</span>
+            Mua sắm</a>
     </nav>
     <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
+    <i class="fas fa-wallet"></i>
+    <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248"></i>
+    <i class="fas fa-user-circle" id="login-btn"></i>
     </div>
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-    </form>
+    
 </header>
 
 <!-- view section  -->
-<section class="home" id="home">
+<section class="home" >
 
     <div class="content">
         <h3>Tìm nơi dừng chân hoàn hảo cùng Hahalolo!</h3>
@@ -57,7 +72,7 @@
 </section>
 
 <!-- Booking section  -->
-<section class="book" id="book">
+<section class="book">
     <h1 class="heading">
         <span>Đ</span>
         <span>Ặ</span>
@@ -91,12 +106,14 @@
                 <input type="number" placeholder="Number of guests">
             </div>
             <input type="submit" class="btn" value="Tìm kiếm">
+
+            <input type="submit" class="btn" value="Tra cứu đặt phòng" style="margin-left:9rem;">
         </form>
     </div>
 </section>
 
 <!-- hotel section  -->
-<section class="packages" id="packages">
+<section class="packages">
 
     <h1 class="heading">
         <span>C</span>
@@ -120,10 +137,10 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="Image/Hamton.jpg" alt="">
+            <img src="Image/Hana.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> HAMPTON INN UTICA NY </h3>
-                <p>172 - 180 North Genesee StrUtica NY 13502 US</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Hana Stay </h3>
+                <p>Số 148 Phan Kế Bính, Cống Vị Quận Ba Đình, Hà Nội</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -131,16 +148,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price">3.206.966 ₫</div>
+                <div class="price">1.300.000 ₫</div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Homewood.jpg" alt="">
+            <img src="Image/Homey.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> HOMEWOOD SUITES BY HILTON SYRACUSE </h3>
-                <p>6006 Fair Lakes Road East Syracuse NY 13057 US</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> HOMEY Hotel Apartment 2 </h3>
+                <p> 156A ngõ 154 Đình Thôn. Mỹ Đình 1, Nam Từ Liêm, Hà Nội</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -148,16 +165,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> 7.540.680 ₫ </div>
+                <div class="price"> 1.000.000 ₫ </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/The reverie.jpg" alt="">
+            <img src="Image/Little.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> THE REVERIE SAIGON </h3>
-                <p>22 to 36 Nguyen Hue Blvd Ho Chi Minh City 70000 VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Little Anh House </h3>
+                <p>6A Ngõ 67 Lý Thường Kiệt, Trần Hưng Đạo Quận Hoàn Kiếm, Hà Nội</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -165,16 +182,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price">5.500.800 ₫</span> </div>
+                <div class="price">1.100.000 ₫</span> </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Somerset.jpg" alt="">
+            <img src="Image/Hamorny.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> SOMERSET HO CHI MINH CITY </h3>
-                <p>8A Nguyen Binh Khiem St Ho Chi Minh City 70000 VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Harmony Homestay </h3>
+                <p>152/21 Phan Thanh, Thạc Gián Quận Thanh Khê, Đà Nẵng</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -182,16 +199,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> 1.820.000 ₫ </div>
+                <div class="price"> 1.300.000 ₫ </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Rex.jpg" alt="">
+            <img src="Image/Maximilan.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> REX HOTEL </h3>
-                <p>141 Nguyen Hue Boulevard DHO CHI MINH CITY 70000 VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Khách Sạn Maximilan Đà Nẵng </h3>
+                <p>222 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà, Đà Nẵng</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -199,16 +216,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> 1.930.780 ₫ </div>
+                <div class="price"> 1.000.000 ₫ </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Citadines.jpg" alt="">
+            <img src="Image/Roliva.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> CITADINES REGENCY SAIGON </h3>
-                <p>20 and 22 Pham Ngoc Thach SHo Chi Minh City 700000 VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Roliva Hotel & Apartment Đà Nẵng </h3>
+                <p>13 Phạm Văn Đồng, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -216,16 +233,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price">1.260.000 ₫</span> </div>
+                <div class="price">1.100.000 ₫</span> </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Sherwood.jpg" alt="">
+            <img src="Image/Aladdin.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> SHERWOOD SUITES LIF </h3>
-                <p>2A 4A Ton Duc Thang Street Ho Chi Minh 700000 VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Aladdin Hotel & Apartment </h3>
+                <p>397 Huỳnh Văn Bánh, Quận Phú Nhuận, Hồ Chí Minh</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -233,16 +250,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> 2.201.500 ₫ </div>
+                <div class="price"> 2.000.000 ₫ </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Sedona.jpg" alt="">
+            <img src="Image/Saigon.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> SEDONA SUITES HO CHI MINH CITY </h3>
-                <p>67 Le Loi Boulevard Ho Chi Minh City VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Saigon Cactus Apartment </h3>
+                <p>251/8 Nguyễn Văn Trỗi, Phường 10, Phú Nhuận, Hồ Chí Minh </p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -250,16 +267,16 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> 2.790.154 ₫ </div>
+                <div class="price"> 1.500.000 ₫ </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
 
         <div class="box">
-            <img src="Image/Intercontinental.jpg" alt="">
+            <img src="Image/TamSen.jpg" alt="">
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> INTERCONTINENTAL SAIGON RESIDENCES </h3>
-                <p>CORNER NGUYEN DU ST. HAIHO CHI MINH CITY VN</p>
+                <h3> <i class="fas fa-map-marker-alt"></i> Tâm Sen Hotel </h3>
+                <p>57A Lê Văn Thịnh, Hồ Chí Minh</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -267,7 +284,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price">3.311.940 ₫</span> </div>
+                <div class="price">1.300.000 ₫</span> </div>
                 <a href="#" class="btn">Đặt ngay</a>
             </div>
         </div>
@@ -275,7 +292,7 @@
 </section>
 
 <!-- Experience section  -->
-<section class="review" id="review">
+<section class="review">
 
     <h1 class="heading">
         <span>T</span>
@@ -352,6 +369,6 @@ AVANI Quy Nhơn Resort & Spa nằm cách trung tâm thành phố Quy Nhơn kho�
 </section>
 
 <script></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

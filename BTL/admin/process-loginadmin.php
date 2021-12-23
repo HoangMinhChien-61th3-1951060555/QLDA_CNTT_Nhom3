@@ -13,7 +13,7 @@
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }
         // Bước 02: Thực hiện truy vấn
-        $sql = "SELECT * FROM db_admin WHERE tk like '$admin' AND pass like '$adminpass'";
+        $sql = "SELECT * FROM admin WHERE tk like '$admin' AND pass like '$adminpass'";
         // Ở đây còn có các vấn đề về tính hợp lệ dữ liệu nhập vào FORM
         // Nghiêm trọng: lỗi SQL Injection
 
