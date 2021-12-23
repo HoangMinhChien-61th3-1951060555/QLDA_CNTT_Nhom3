@@ -1,0 +1,108 @@
+html,body{
+    height: 100%;
+    background-color:white;
+    font-family: "Roboto", sans-serif;
+}
+
+.sidenav {
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav .h-header{
+   display: flex; 
+   align-items:center ;
+    
+}
+.sidenav .h-header img{
+    height: 60px;
+    width: 60px;
+}
+.sidenav .h-header h3{
+    margin: 0;
+    padding-left: 5px;
+}
+.global-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#0db8de;
+}
+.card-body{
+    border: 1px solid #0db8de;
+}
+form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top:30px;
+
+}
+.login-form{
+    width: 380px;
+    height: 450px;
+    margin: 20px;
+    background:  #0db8de ;
+    border-radius: 10px;
+}
+
+.global-container .card .card-body .card-text .form-group input{
+    background: darkcyan;
+    border: 2px solid #0db8de;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.global-container .card  .card-body .card-text .form-group input:focus{
+    outline: none;
+     border:none;
+     background: #0db8de;
+     margin: 0;
+}
+.card-title{
+    font-weight: 900;
+    padding-top: 20px;
+
+}
+.btn{
+    background: #0db8de;
+    font-size: 14px;
+    transform: translateY(10px);
+    border-radius: 10px;
+    text-align: center;
+}
+.signup{
+    text-align: center;
+    padding-top: 25px;
+}
+.container_swap{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex ;
+    box-sizing: border-box;
+    width: 1400px;
+    height: 100px;
+}
+.container_swap .div-left{
+width: 350px;
+float: left;
+text-align: center;
+padding-left: 20px;
+
+}
+.container_swap .div-center{
+width: 600px;
+text-align: center;
+}
+.container_swap .div_right{
+    width: 450px;
+}
+.container_swap .div_right .language .foot{
+ margin: 25px 0 0 0 ;
+}
+.container_swap .div_left .link button{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
