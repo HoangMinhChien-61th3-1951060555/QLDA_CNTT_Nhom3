@@ -22,7 +22,7 @@
 
 <header>
     <div id="menu-bar" class="fas fa-bars"></div>
-    <img style = "width:3% "src="Image/Logo.jpg">
+    <img class="img" style = "width:3% "src="Image/Logo.jpg">
     <a href="#" class="logo"><span>H</span>ahalolo</a>
     <nav class="navbar">
         
