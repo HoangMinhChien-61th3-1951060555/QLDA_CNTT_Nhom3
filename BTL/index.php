@@ -44,7 +44,7 @@
     <div class="icons">
     <i class="fas fa-wallet"></i>
     <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248"></i>
-    <i class="fas fa-user-circle" id="login-btn"></i>
+    <a href = "signin.php"  <i class="fas fa-user-circle" id="login-btn" ></i></a>
     </div>
     
 </header>
@@ -88,7 +88,7 @@
         <div class="image">
             <img src="Image/graphic.png" alt="">
         </div>
-        <form action="">
+        <form action="timkiem.php">
             <div class="inputBox">
                 <h3>Bạn muốn ở đâu ?</h3>
                 <input type="text" placeholder="Place you want">
@@ -149,7 +149,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price">1.300.000 ₫</div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -166,7 +166,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 1.000.000 ₫ </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -183,7 +183,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price">1.100.000 ₫</span> </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -200,7 +200,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 1.300.000 ₫ </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -217,7 +217,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 1.000.000 ₫ </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -234,7 +234,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price">1.100.000 ₫</span> </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -251,7 +251,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 2.000.000 ₫ </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -268,7 +268,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price"> 1.500.000 ₫ </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
 
@@ -285,7 +285,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <div class="price">1.300.000 ₫</span> </div>
-                <a href="#" class="btn">Đặt ngay</a>
+                <a href="datphong.php" class="btn">Đặt ngay</a>
             </div>
         </div>
     </div>

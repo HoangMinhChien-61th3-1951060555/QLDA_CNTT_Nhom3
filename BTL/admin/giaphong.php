@@ -39,8 +39,8 @@
                                     <td><?php echo $row['TenKS']; ?></td>
                                     <td><?php echo $row['Loai']; ?></td>
                                     <td><?php echo $row['Gia']; ?></td>
-                                    <td><a href="update-gia.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="delete-gia.php?id=<?php echo $row['MaKS']; ?>"><i class="bi bi-trash"></i></a></td>
+                                    <td><a href="update-gia.php?maks=<?= $row['MaKS'] ?>&loai=<?= $row['Loai'] ?>"><i class="bi bi-pencil-square"></i></a></td>
+
                                 </tr>
                     <?php
                             }

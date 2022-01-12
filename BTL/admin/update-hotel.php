@@ -60,7 +60,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtMoTa">Mô tảt</label>
+                <label for="txtMoTa">Mô tả</label>
                 <input type="text" class="form-control" id="txtMoTa" name="txtSLdat" placeholder="Mô tả" value="<?php echo $row['MoTa']; ?>">
               
             </div>
