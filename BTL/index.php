@@ -43,7 +43,7 @@
     </nav>
     <div class="icons">
     <i class="fas fa-wallet"></i>
-    <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248"></i>
+    <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248)"></i>
     <a href = "signin.php"  <i class="fas fa-user-circle" id="login-btn" ></i></a>
     </div>
     

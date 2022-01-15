@@ -1,0 +1,49 @@
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+  }
+  
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:black;
+  }
+  
+  header .logo span{
+    color:var(--blue);
+    font-size: 3.5rem;
+  }
+  
+  header .navbar a{
+    color:black;
+    font-size: 1.2rem;
+    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 3rem;
+    text-decoration: none;
+  }
+  
+  
+  header .navbar a:hover{
+    color:var(--blue);
+  
+  }
+  
+  header .icons i{
+    font-size: 2rem;
+    color:gray;
+    cursor: pointer;
+    margin-right: 3rem;
+  }
+  
+  header .icons i:hover{
+    color:var(--blue);
+  }
