@@ -43,8 +43,8 @@
     </nav>
     <div class="icons">
     <i class="fas fa-wallet"></i>
-    <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248)"></i>
-    <a href = "signin.php"  <i class="fas fa-user-circle" id="login-btn" ></i></a>
+    <i class="fab fa-facebook-messenger" style="color: rgb(82, 168, 248"></i>
+    <a href = "login.php"  <i class="fas fa-user-circle" id="login-btn" ></i></a>
     </div>
     
 </header>
@@ -88,7 +88,7 @@
         <div class="image">
             <img src="Image/graphic.png" alt="">
         </div>
-        <form action="timkiem.php">
+        <form action="search-hotel.php">
             <div class="inputBox">
                 <h3>Bạn muốn ở đâu ?</h3>
                 <input type="text" placeholder="Place you want">

@@ -18,7 +18,7 @@
                         <th scope="col">Mã khách sạn</th>
                         <th scope="col">Ngày đặt </th>
                         <th scope="col">Ngày trả</th>
-                        <th scope="col">Số lư</th>
+                        <th scope="col">Số lượng</th>
                         <th scope="col">Giá tiền</th>
                     </tr>
                 </thead>
