@@ -282,7 +282,7 @@
         </div>
         </div>
         <div class="container-pay">
-          <button type="button" class="btn btn-primary">Thanh toán</button>
+          <button type="button" class="btn btn-primary" style="boder-radius:15px">Thanh toán</button>
         </div>
       </div>
       <div class="col-md-6 row2" >
@@ -293,7 +293,7 @@
             <p><b>Thông tin phòng</b></p>
             <hr>
             <div class="card" style="width: 15rem;">
-              <img src="Image/Hamton.jpg" class="card-img-top" alt="...">
+              <img src="Image/Homewood.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text"></p>
@@ -309,7 +309,7 @@
                 <p style="float:left">1xPhòng</p>
                 <div class="h-rightpay" style="float:right">
                   <p>(Giá 1 phòng,1 đêm)</p>
-                  <a href="" style="text-decoration:none;color:red">2.450.000</a>
+                  <a href="" style="text-decoration:none;color:red"> 2.750.000</a>
 
                 </div>
               </div>
